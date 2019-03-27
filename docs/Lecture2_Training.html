@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang=de>
+<head>
+    <meta charset="UTF-8">
+    <title>Storybook for the Web Engineering Module</title>
+	<link href="ttps://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<style>
+	thead {
+	   text-align: left;
+	   }
+	caption {
+	   text-align: left;
+	   //line-height: 2.0;
+	   color: maroon;
+	   text-decoration: underline;
+	   font-weight: bold
+	   }
+	td {
+	   padding-bottom: 8px;
+	   padding-right: 15px;
+	   }
+	   
+	   /*
+	   tr + tr + tr {
+	       color: red;
+		}
+		*/
+		.blueLine {
+		    color: blue;
+		}
+		
+		.redLine {
+		    color: red;
+			}
+		/*
+		tr + tr + tr + tr {
+		    color: black;}
+		}
+		*/
+		
+		tr span {
+			color: red;
+			font-weight: bold
+		}
+		b {
+		  font-weight: bold
+		  }
+		body {
+            margin: 0;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+        h2 {
+            font-size: 2rem;
+            font-weight: normal;
+        }
+        a {
+            color: black;
+        }
+        a:visited {
+            color: #707070;
+        }
+        p {
+            margin-top:    0.6em;
+            margin-bottom: 0.6em;
+        }
+
+		footer {
+            background:    linear-gradient(#cdd0dc, #e2e6ee);
+            display:       grid;
+			 padding-left:  50px;
+            padding-right: 50px;
+			padding-bottom: 20px;
+            grid-template-columns: 1fr 2fr 1fr;
+        }
+        address {
+            font-style:  normal;
+            white-space: pre-line;
+        }
+		footer_center_element {
+		   text-align: center;
+		   }
+	   </style>
+</head>
+<body>
+<header>
+    <dfn title="Drehbuch">Storybook</dfn> for the Web Engineering Module
+</header>
+<main>
+    <section id="context">
+        <h1>Module delivery mode</h1>
+        <p> This installment of the <dfn title="WebEngineering">webeC</dfn> module is
+            delivered in the fall semester of 2018.
+        </p>
+
+    </section>
+    <section id="content">
+        <!-- <h1>Delivery dates and examination details</h1> -->
+        <article>
+            <h2>Overview</h2>
+            <table>
+                <!-- <caption>Delivery dates:</caption> -->
+                <thead>       <tr><th> Date   </th><th>   </th><th>Topic</th></tr></thead>
+                <tbody>   
+				<tr><td> Di, 19.02.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> HTML	</td></tr>
+				<tr><td> Di, 26.02.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> CSS </td></tr>	
+				<tr><td> Di, 05.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Grails, Web, MVC</td></tr>
+				<tr><td> Di, 12.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> GSP, Template, Taglib, Layout	</td></tr>	
+				<tr><td> Di, 19.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Consolidation training, Testing	</td></tr>
+				<tr><td> Di, 26.03.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Persistence, DB-Access (GORM)	</td></tr>	
+				<tr><td> Di, 02.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> REST, Services	    </td></tr>                      	
+				<tr><td> Di, 09.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Role-based Security	</td></tr>                      	
+				<tr class="blueLine"><td> Di, 16.04.19 </td><td> 12:15 - 15:00 </td><td> Übungsvorbereitung <span> ** Anwesenheitspflicht ** </span>	</td></tr>
+
+				<tr><td> Di, 30.04.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Übungsanlass </td></tr>
+					
+				<tr><td> Di, 14.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Übungsanlass	 </td></tr>         	
+				<tr class="blueLine"><td> Di, 21.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Javascript, <span>** Übungsabgabe **</span>	</td></tr>
+				<tr><td> Di, 28.05.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Responsive / Mobile Web 	</td></tr>
+				<tr><td> Di, 04.06.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Deployment	    </td></tr>      	
+				<tr><td> Di, 11.06.19 </td><td> 12<sup>15</sup> - 15<sup>00</sup> </td><td> Prüfungsvorbereitung </td></tr>
+                </tbody>
+                <tfoot><tr class="redLine"><td colspan="3"> MSP date to be announced</td> </tr></tfoot>
+            </table>
+        </article>
+        <article>
+            <h2> Total Effort</h2>
+            <p> Classroom lectures add up to <code>15 * 3h = 45h</code>.</p>
+            <p> Prework and afterwork, including homework adds up to <code>15 * 1h = 15h</code>.</p>
+            <p> The exercise for the continuous assessment grade takes <code>4 * 5h = 20h</code>.</p>
+            <p> Preparation for the final exam will take approximately <code>8h</code>.</p>
+            <p> Writing the final exam takes <code>2h</code>.</p>
+            <p> This makes a total of <code>90h</code>.</p>
+        </article>
+        <article id="criteria">
+            <h2> Passing criteria </h2>
+            <ul>
+                <li>You have to attend the exercise preparation event.</li>
+                <li>You have to do the exercise and deliver before the deadline.</li>
+                <li>You have to attend the <dfn title="Modulschlussprüfung">final exam (MSP)</dfn>.</li>
+            </ul>
+            <p> Your exercise will determine your <abbr title="Erfahrungsnote">continuous assessment grade (EN)</abbr>. </p>
+            <p> EN and MSP together make your final grade. </p>
+
+        </article>
+    </section>
+</main>
+<footer>
+   
+		<h2>Contact</h2> <div></div> <div></div>
+		<address>
+            See my other projects at <a href="https://milovanovicdarko.github.io/webec/Example.html">Example_Project</a>
+            or <a href="https://milovanovicdarko.github.io/webec/Storybook.html">Storybook_Project</a>
+		    FHNW Projects baby
+			Produced by Donnie D.
+			Chocolate country SWITZERLAND
+            <a href="donnie.darko@students.fhnw.ch">donnie.darko@students.fhnw.ch</a>
+			<a href="tel:+41-56-123-45-67">+41 56 123 45 67</a>
+		</address>
+		<footer_center_element><address>
+            Fellow at <a href="https://dein-meister.ch">Dein Meister AG</a>
+			ABC-Strasse 12
+			1234 ABC
+          
+            <a href="mailto:donnie.darko@karakun.com">donnie.darko@students.fhnw.ch</a>
+			<a href="tel:+41-61-551-36-00">+41 61 551 36 00</a>
+
+		</address>
+		</footer_center_element>
+		<address>
+            <b>Hier könnte Ihre Werbung stehen...</b>
+			Werbung-Strasse
+			1234 Werbung
+
+		</address>
+			
+</footer>
+</body>
+</html>
