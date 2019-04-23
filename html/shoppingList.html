@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="de" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="shoppingList.css">
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <title>Shopping List</title>
+  </head>
+  <body>
+    <section id="overlay">
+      <img src="istockphoto-117692240-612x612.jpg" alt="Shopping Logo" id="logo">
+      <hr>
+      <form method="POST" action="savedShoppingList.html">
+      <h1>Shopping List</h1>
+		<!-- Das Gesunde zeugs... -->
+        <section class="greenSalad">
+          <label for="green_salad">Welle grüene Salat ?</label>
+    	  <input type="text" name="green_salad" id="green_salad">
+        </section>
+        <section class="othersHealthy">
+          <!-- ><span>TITEL - Das gesunde Zeugs </span> -->
+          <input type="checkbox" name="others_pepperoni" id="pepperoni" value="pepperoni">
+          <label for="pepperoni">Peperoni</label>
+          <input type="checkbox" name="others_carrots" id="carrots" value="carrots">
+          <label for="carrots">Rüebli</label>
+          <input type="checkbox" name="others_aubergine" id="aubergine" value="aubergine">
+          <label for="aubergine">Aubergine</label>
+		  <br>
+          <input type="checkbox" name="others_zucchetti" id="zucchetti" value="zucchetti">
+          <label for="zucchetti">Zucchetti</label>
+          <input type="checkbox" name="others_tomatos" id="tomatos" value="tomatos">
+          <label for="tomatos">Tomatos</label>
+          <input type="checkbox" name="others_mushrooms" id="mushrooms" value="mushrooms">
+          <label for="mushrooms">Pilzli</label>
+        </section>
+        <section class="others">
+          <label for="others_diverses">diverses ?</label>
+    	  <input type="text" name="diverses_healthy" id="diverses_healthy">
+        </section>
+      <hr>
+		<!-- Fisch/Fleisch -->
+        <section class="Fisch_Fleisch">
+          <label for="fisch_fleisch">Fisch/Fleisch ?</label>
+          <input type="text" name="fisch_fleisch" id="fisch_fleisch">
+        </section>
+        <section class="Ufschnitt_cass">
+          <label for="Rohschinken_cass">Rohschinken cathrin?</label>
+	      <select name="rohschinken_cass" id="rohschinken_cass">
+			<option value="rohschinken_0_cass">-</option>
+            <option value="rohschinken_1_cass">parmaschinken 14m</option>
+            <option value="rohschinken_2_cass">parmaschinken 18m</option>
+            <option value="rohschinken_3_cass">san daniele</option>
+			<option value="rohschinken_4_cass">serrano</option>
+          </select>
+	    </section>
+        <section class="Ufschnitt_dmi">
+          <label for="Rohschinken_dmi">Rohschinken darko?</label>
+ 	      <select name="rohschinken_dmi" id="rohschinken_dmi">
+ 		    <option value="rohschinken_0_dmi">-</option>
+            <option value="rohschinken_1_dmi">grischun</option>
+            <option value="rohschinken_2_dmi">bündner rohschinken</option>
+          </select>
+	    </section>
+        <section class="othersUnHealthy">
+           <!-- ><span>TITEL - Das ungesunde Zeugs </span> 
+           <br> -->
+          <input type="checkbox" name="others_salami" id="salami" value="salami">
+          <label for="salami">Salami</label>
+          <input type="checkbox" name="others_poulet" id="poulet" value="poulet">
+          <label for="poulet">Poulet</label>
+          <input type="checkbox" name="others_speck" id="speck" value="speck">
+          <label for="speck">Späck ?</label>
+          <input type="checkbox" name="others_schinken" id="schinken" value="schinken">
+          <label for="aubergine">Schinken/Jambon</label>
+	    </section>
+        <section class="others">
+          <label for="others_diverses">diverses ?</label>
+       	  <input type="text" name="diverses_unhealthy" id="diverses_unhealthy">
+        </section>
+	  <hr>
+        <section class="Kaese">
+          <label for="kaese">Chäs</label>
+          <select name="kaese" id="kaese">
+			<option value="kaese_0">-</option>
+            <option value="kaese_1">Hartchäs</option>
+            <option value="kaese_2">Weichchäs</option>
+            <option value="kaese_3">Raclette</option>
+			<option value="kaese_4">Fondue</option>
+          </select>
+        </section>
+        <section class="Milchprodukte">
+         <input type="checkbox" name="nudeln" id="nudeln" value="nudeln">
+         <label for="eier">Nüdeli ?</label>
+         <input type="checkbox" name="eier" id="eier" value="eier">
+         <label for="eier">Eier ?</label>
+         <input type="checkbox" name="brot" id="brot" value="brot">
+         <label for="eier">Brot ?</label>
+        </section>
+        <section class="others">
+          <label for="kaese_diverses">diverses ?</label>
+    	   <input type="text" name="kaese_diverses" id="kaese_diverses">
+        </section>
+      <hr>
+        <section class="Horrible">
+         <input type="checkbox" name="schoggi" id="schoggi" value="schoggi">
+         <label for="eier">Schoggi ?</label>
+         <input type="checkbox" name="Chipsli_Bacon" id="chipsli_bacon" value="chipsli_bacon">
+         <label for="eier">Chipsli-Bacon ?</label>
+         <input type="checkbox" name="Chipsli_Pommbaer" id="chipsli_pommbaer" value="chipsli_pommbaer">
+         <label for="eier">Chipsli-Pommbär ?</label>
+        </section>
+	  <hr>
+        <section class="extra-info">
+          <label for="extra">SPEZIAL ???</label>
+          <br>
+          <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+        </section>
+      <hr>
+        <section class="submission">
+          <input type="submit" name="save" value="save Button">
+		  <input type="reset" name="reset" value="reset Button">
+        </section>
+      </form>
+    </section>
+  </body>
+</html>
